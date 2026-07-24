@@ -36,6 +36,12 @@ const routes = [
     component: () => import('../views/AuditView.vue'),
     meta: { title: '审计日志', icon: '📜' },
   },
+  {
+    path: '/recycle',
+    name: 'Recycle',
+    component: () => import('../views/RecycleView.vue'),
+    meta: { title: '回收站', icon: '🗑️' },
+  },
 ]
 
 const router = createRouter({

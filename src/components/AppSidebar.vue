@@ -45,6 +45,7 @@ const navItems = [
   { key: 'objects',  label: '对象上传', icon: '📁', route: '/objects' },
   { key: 'policies', label: '存储策略', icon: '📋', route: '/policies' },
   { key: 'audit',    label: '审计日志', icon: '📜', route: '/audit' },
+  { key: 'recycle',  label: '回收站',   icon: '🗑️', route: '/recycle' },
 ]
 
 const envLabel = computed(() => {

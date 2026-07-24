@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['README.md', '.gitignore']
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Verify dist output
+        run: |
+          if [ ! -f dist/index.html ]; then
+            echo "Build output missing dist/index.html"
+            exit 1
+          fi
+          echo "Build size:"
+          du -sh dist/
