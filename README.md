@@ -1,5 +1,9 @@
 # UFS Console
 
+[![CI](https://github.com/yesingle10/ufs-console/actions/workflows/ci.yml/badge.svg)](https://github.com/yesingle10/ufs-console/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/yesingle10/ufs-console/actions/workflows/codeql.yml/badge.svg)](https://github.com/yesingle10/ufs-console/actions/workflows/codeql.yml)
+[![Release](https://img.shields.io/github/v/release/yesingle10/ufs-console?color=blue)](https://github.com/yesingle10/ufs-console/releases)
+
 UFS 统一文件服务管理控制台 — Vue 3 + Vite + Tailwind CSS + Chart.js
 
 ## 技术栈
